@@ -43,15 +43,6 @@ export const catalog: Catalog = {
         {
             id: 'flush',
             name: 'Modern Flush',
-            thumbnail: 'https://images.unsplash.com/photo-1517646133499-2e06f9d27376?w=150&h=150&fit=crop',
-            compatibleMaterials: ['steel', 'fiberglass'],
-            compatibleGlass: ['full', 'half', 'none']
-        },
-        {
-            id: '6-panel',
-        {
-            id: 'flush',
-            name: 'Modern Flush',
             thumbnail: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100',
             compatibleMaterials: ['fiberglass-smooth', 'steel', 'authentic-wood'],
             compatibleGlass: ['none', 'full-lite']
@@ -97,13 +88,13 @@ export const catalog: Catalog = {
             thumbnail: 'https://images.unsplash.com/photo-1449156001437-37e671adb27b?q=80&w=100',
             compatibleMaterials: ['fiberglass-grain', 'authentic-wood'],
             compatibleGlass: ['none', 'clear']
-        },
+        }
     ],
     materials: [
         { id: 'fiberglass-grain', name: 'Textured Fiberglass', thumbnail: 'Grain' },
         { id: 'fiberglass-smooth', name: 'Smooth Fiberglass', thumbnail: 'Smooth' },
         { id: 'steel', name: 'Steel', thumbnail: 'Steel' },
-        { id: 'authentic-wood', name: 'Authentic Wood', thumbnail: 'Wood' },
+        { id: 'authentic-wood', name: 'Authentic Wood', thumbnail: 'Wood' }
     ],
     colors: {
         'fiberglass-grain': [
@@ -113,7 +104,7 @@ export const catalog: Catalog = {
             { id: 'walnut-stain', name: 'English Walnut', thumbnail: '#5d3a1a' },
             { id: 'mahogany-stain', name: 'Deep Mahogany', thumbnail: '#4a0e0e' },
             { id: 'raven', name: 'Raven (Black Stain)', thumbnail: '#1a1a1a' },
-            { id: 'driftwood', name: 'Driftwood', thumbnail: '#a9a9a9' },
+            { id: 'driftwood', name: 'Driftwood', thumbnail: '#a9a9a9' }
         ],
         'fiberglass-smooth': [
             { id: 'white', name: 'Arctic White', thumbnail: '#f8fafc' },
@@ -121,19 +112,19 @@ export const catalog: Catalog = {
             { id: 'indigo', name: 'Naval Indigo', thumbnail: '#1e3a8a' },
             { id: 'sage', name: 'Evergreen Sage', thumbnail: '#4d7c0f' },
             { id: 'slate', name: 'Modern Slate', thumbnail: '#475569' },
-            { id: 'terracotta', name: 'Adobe Terracotta', thumbnail: '#9a3412' },
+            { id: 'terracotta', name: 'Adobe Terracotta', thumbnail: '#9a3412' }
         ],
         'steel': [
             { id: 'white', name: 'Standard White', thumbnail: '#ffffff' },
             { id: 'black', name: 'Standard Black', thumbnail: '#000000' },
             { id: 'grey', name: 'Cool Grey', thumbnail: '#94a3b8' },
-            { id: 'brown', name: 'Architectural Brown', thumbnail: '#451a03' },
+            { id: 'brown', name: 'Architectural Brown', thumbnail: '#451a03' }
         ],
         'authentic-wood': [
             { id: 'oak-natural', name: 'White Oak Pure', thumbnail: '#e5c09e' },
             { id: 'mahogany-rich', name: 'Honduran Mahogany', thumbnail: '#5e2105' },
             { id: 'alder-knotty', name: 'Knotty Alder', thumbnail: '#b5835a' },
-            { id: 'walnut-premium', name: 'Black Walnut', thumbnail: '#3a2414' },
+            { id: 'walnut-premium', name: 'Black Walnut', thumbnail: '#3a2414' }
         ]
     },
     glass: [
