@@ -1,7 +1,11 @@
 import { Sidebar } from './components/UI/Sidebar';
 import { Visualizer } from './components/Visualizer/Visualizer';
+import { useConfiguratorStore } from './store/useConfiguratorStore';
+import { SlidersHorizontal } from 'lucide-react';
 
 function App() {
+  const toggleSidebar = useConfiguratorStore((s) => s.toggleSidebar);
+
   return (
     <div className="h-screen flex flex-col bg-background text-slate-900 font-sans overflow-hidden">
       {/* Header */}
@@ -19,6 +23,12 @@ function App() {
         <div className="flex items-center gap-3">
           <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-5 rounded-lg shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5">
             Save Project
+          </button>
+          <button
+            onClick={toggleSidebar}
+            className="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+          >
+            <SlidersHorizontal size={20} />
           </button>
         </div>
       </header>

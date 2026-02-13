@@ -2,6 +2,9 @@ import { create } from 'zustand';
 import type { ConfigurationState, Category } from '../types';
 
 interface ConfiguratorStore extends ConfigurationState {
+    sidebarOpen: boolean;
+    toggleSidebar: () => void;
+    setSidebarOpen: (open: boolean) => void;
     setStep: (step: number) => void;
     nextStep: () => void;
     prevStep: () => void;
@@ -29,6 +32,10 @@ const initialState: ConfigurationState = {
 
 export const useConfiguratorStore = create<ConfiguratorStore>((set) => ({
     ...initialState,
+
+    sidebarOpen: false,
+    toggleSidebar: () => set((state) => ({ sidebarOpen: !state.sidebarOpen })),
+    setSidebarOpen: (open) => set({ sidebarOpen: open }),
 
     setStep: (step) => set({ step }),
 
